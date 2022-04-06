@@ -1,20 +1,81 @@
-﻿// 220406_HelloVariable.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
-//
+﻿/*
+    변수
+    1)  이름  2)  크기  3)  값   4)  메모리주소
+*/
 
 #include <iostream>
+#include <string>
+
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    //float testNum1 = 2.8f;
+    ///*
+    //    float - floating point 부동소수점 약자
+    //    f로 float형이라고 표기. 쓰지 않으면 경고가 뜸
+    //    f를 붙이지 않으면 기본적으로 double형으로 취급
+    //*/
+    ///*
+    //    1)    이름 : testNum1   2)  크기 : 4byte      3)  값 : 2.8     4)  메모리주소 : 000000C8FBAFF894
+    //    16진수 16자리로 메모리가 표현됨
+    //*/
+    //double testNum2 = 2.8;
+
+    //cout << sizeof(testNum1) << endl;
+
+    //cout << &testNum1 << endl;
+    //cout << testNum2 << endl;
+    /*
+        실습 1. 상대방 이름과 내 이름, 상대방 나이를 입력 받아서 생일 축하메시지를 출력하는 프로그램을 만들어보자.
+
+        예시)
+        상대방 이름을 입력하세요.
+        _권희영
+
+        본인의 이름을 입력하세요
+        _전지윤
+
+        상대방 나이를 입력하세요.
+        _24
+
+        전지윤 : 권희영님 24살 생일을 축하합니다.
+    */
+    /*
+        변수가 필요함
+        데이터타입 변수명;
+    */
+
+    string your_name;
+    cout << "상대방 이름을 입력하세요." << endl;
+    cin >> your_name;
+
+    string my_name;
+    cout << "본인의 이름을 입력하세요." << endl;
+    cin >> my_name;
+
+    int your_age;
+    cout << "상대방 나이를 입력하세요." << endl;
+    cin >> your_age;
+
+    cout << my_name << " : " << your_name << "님 " << your_age << "살 생일을 축하합니다." << endl;
+
+    // 내가 짠 코드
+    /*string name1, name2;
+    int age;
+
+    cout << "system : 상대방 이름을 입력해라.\n>";
+    cin >> name1;
+    cout << endl;
+
+    cout << "system : 상대방 나이를 입력해라.\n>";
+    cin >> age;
+    cout << endl;
+
+    cout << "system : 본인의 이름을 입력해라.\n>";
+    cin >> name2;
+    cout << endl;
+
+    cout << "system : <<<<<<" << name2 << "님이 " << name1 << "님의 " << age << "살 생일을 축하드림.>>>>>>" << endl;*/
+
 }
-
-// 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
-// 프로그램 디버그: <F5> 키 또는 [디버그] > [디버깅 시작] 메뉴
-
-// 시작을 위한 팁: 
-//   1. [솔루션 탐색기] 창을 사용하여 파일을 추가/관리합니다.
-//   2. [팀 탐색기] 창을 사용하여 소스 제어에 연결합니다.
-//   3. [출력] 창을 사용하여 빌드 출력 및 기타 메시지를 확인합니다.
-//   4. [오류 목록] 창을 사용하여 오류를 봅니다.
-//   5. [프로젝트] > [새 항목 추가]로 이동하여 새 코드 파일을 만들거나, [프로젝트] > [기존 항목 추가]로 이동하여 기존 코드 파일을 프로젝트에 추가합니다.
-//   6. 나중에 이 프로젝트를 다시 열려면 [파일] > [열기] > [프로젝트]로 이동하고 .sln 파일을 선택합니다.
