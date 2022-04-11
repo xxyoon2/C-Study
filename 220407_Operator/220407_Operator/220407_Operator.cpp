@@ -60,7 +60,6 @@ int main()
     cout << "/ : " << left_value / right_value << endl;
     cout << "% : " << left_value % right_value << endl;
 
-
     /*
         사칙연산은 계산해서 값이 나오지만 복합대입연산자는 계산하고 값을 저장하는 것.
         그래서 cout << left_data += right_data << endl; 은 불가능
